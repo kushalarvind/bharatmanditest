@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Display Data from Json File in Angular</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>User ID</th>
+        <th>Tags</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let post of posts.posts">
+        <td>{{ post.id }}</td>
+        <td>{{ post.title }}</td>
+        <td>{{ post.userId }}</td>
+        <td>{{ post.tags }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
